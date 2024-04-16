@@ -311,7 +311,7 @@ const Navbar = () => {
                     color="primary"
                     size="large"
                     variant="outlined"
-                    href="https://histudy-app.netlify.app/login"
+                    href="https://histudy-dashboard.netlify.app/login"
                     target="_blank"
                   >
                     Login
