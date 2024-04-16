@@ -47,21 +47,24 @@ const LandingSection = () => {
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        "&::after": {
-          content: "''",
-          position: "absolute",
-          bottom: "-2px",
-          left: "0",
-          backgroundImage: `url(${landingBottomShape})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "145px",
-          zIndex: "1",
-        },
       }}
     >
+      <Box
+        position="absolute"
+        fontSize="0"
+        bottom="-2px"
+        left="0"
+        right="0"
+        backgroundSize="cover"
+        backgroundPosition="center center"
+        backgroundRepeat="no-repeat"
+        zIndex="1"
+      >
+        <img
+          style={{ height: "100%", width: "100%" }}
+          src={landingBottomShape}
+        />
+      </Box>
       <Box position="absolute" left={120} top={0}>
         <img src={topLandingImg} alt="" />
       </Box>

@@ -6,11 +6,11 @@ import { useEffect, useRef, useState } from "react";
 import useThemeColorGradient from "../hooks/useThemeColorGradient";
 // Pros List
 const pros = [
-  "Free future template updates",
+  "Learn How to create responsive designs",
 
-  "Mix and Match Section Blocks",
+  "Learn How to write with best practice",
 
-  "Quality checked by Envato",
+  "Learn How to create high quality website",
 ];
 
 const CustomizeSection = () => {

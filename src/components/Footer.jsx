@@ -29,7 +29,7 @@ const Footer = () => (
           }}
           to="/"
         >
-          Rainbow-Themes.
+          Team-1.
         </Typography>{" "}
         © All rights reserved
       </Typography>

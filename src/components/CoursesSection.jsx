@@ -26,7 +26,7 @@ const Courses = () => {
             className="gradient-text"
             sx={{ backgroundImage: colorGradient1 }}
           >
-            World-Class Stunning Demos
+            Empower Yourself in Web
           </Typography>
           <Typography
             variant="h3"
@@ -36,10 +36,10 @@ const Courses = () => {
             maxWidth="850px"
             textAlign="center"
           >
-            Best-in-class designs to get you started.
+            Best-instructors to get you started.
             <span style={{ color: "#19233550" }}>
-              Use any demo or template for education website. You can mix and
-              match all the demos and templates.
+              You can Empower yourself with us. You can mix and match all the
+              your skills in templates.
             </span>
           </Typography>
 
@@ -49,8 +49,8 @@ const Courses = () => {
             maxWidth="650px"
             textAlign="center"
           >
-            Create a complete education website with a lots of demo page and
-            250+ section blocks to create a unique site.
+            Create a complete education website and other hard websites with
+            advanced techniques.
           </Typography>
           <Box
             position="absolute"
