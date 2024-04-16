@@ -1,19 +1,23 @@
 import Lottie from "lottie-react";
 import web from "../assets/lotties-animations/web.json";
 
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 const ScreenLoader = () => {
   return (
     <Stack justifyContent="center" alignItems="center" height="100vh">
       <Stack alignItems="center" justifyContent="center">
-        <Box width={{ xs: "80%", md: "55%" }}>
+        <Stack
+          justifyContent="center"
+          alignItems="center"
+          width={{ xs: "80%", md: "55%" }}
+        >
           <Lottie
             style={{
-              width: "200px",
+              width: "350px",
             }}
             animationData={web}
           />
-        </Box>
+        </Stack>
       </Stack>
     </Stack>
   );
