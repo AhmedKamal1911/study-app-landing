@@ -9,7 +9,7 @@ const ScreenLoader = () => {
         <Box width={{ xs: "80%", md: "55%" }}>
           <Lottie
             style={{
-              width: "100%%",
+              width: "200px",
             }}
             animationData={web}
           />
