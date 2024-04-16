@@ -124,7 +124,7 @@ const CourseSidebar = ({
       </Box>
       <Button
         component="a"
-        href="https://histudy-app.netlify.app/login"
+        href="https://histudy-dashboard.netlify.app/login"
         target="_blank"
         rel="noopener noreferrer"
         fullWidth

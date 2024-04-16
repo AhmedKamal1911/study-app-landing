@@ -143,7 +143,7 @@ export const NavList = ({ direction = "row", showLoginLink = false }) => {
             color="primary"
             size="large"
             variant="outlined"
-            href="https://histudy-app.netlify.app/login"
+            href="https://histudy-dashboard.netlify.app/login"
           >
             Login
           </Button>
