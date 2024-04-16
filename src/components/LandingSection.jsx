@@ -52,7 +52,7 @@ const LandingSection = () => {
           position: "absolute",
           bottom: "-2px",
           left: "0",
-          background: `url(${landingBottomShape})`,
+          backgroundImage: `url(${landingBottomShape})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
