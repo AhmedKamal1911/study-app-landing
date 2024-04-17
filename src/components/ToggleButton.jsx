@@ -24,7 +24,7 @@ const ToggleButton = ({ open, handleClick }) => {
         borderRadius: "50%",
         padding: 0,
         border: open ? "2px solid rgb(10, 139, 198)" : "none",
-        backgroundColor: "transparent",
+        backgroundColor: "white",
 
         cursor: "pointer",
       }}

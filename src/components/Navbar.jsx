@@ -18,6 +18,10 @@ export const NAV_LINKS = [
     linkName: "contact us",
     path: "/contact",
   },
+  {
+    linkName: "login",
+    path: "https://histudy-dashboard.netlify.app/login",
+  },
 ];
 export const RELATIVE_LINKS = [
   {

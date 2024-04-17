@@ -1,7 +1,7 @@
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { NAV_LINKS, RELATIVE_LINKS } from "../components/Navbar";
+import { NAV_LINKS, NavList, RELATIVE_LINKS } from "../components/Navbar";
 import useSectionNavigation from "./useSectionNavigation";
 const useAlan = () => {
   const navigate = useNavigate();
@@ -26,6 +26,8 @@ const useAlan = () => {
 
               if (navLinkItemIndex > -1) {
                 // Handle Page Navigation
+                console.log(navLinkItemIndex, "index");
+                //TODO: create login logic
                 const path = NAV_LINKS[navLinkItemIndex].path;
                 navigate(path);
               } else {
