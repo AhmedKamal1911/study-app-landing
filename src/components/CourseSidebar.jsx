@@ -4,6 +4,7 @@ import useThemeColorGradient from "../hooks/useThemeColorGradient";
 import videoImg from "../assets/images/video-01.jpg";
 import ShowMoreWrapper from "./ShowMoreWrapper";
 import formatNumber from "../utils/formatNumber";
+import { Link } from "react-router-dom";
 
 const CourseSidebarListItem = ({ title, value }) => (
   <Stack
@@ -56,6 +57,9 @@ const CourseSidebar = ({
       }}
     >
       <Box
+        component={Link}
+        to="https://histudy-dashboard.netlify.app/enroll"
+        target="_blank"
         display="block"
         mb={3}
         position="relative"
