@@ -55,7 +55,7 @@ const Sidebar = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              width: "250px",
+              width: "220px",
               height: "100vh",
               background: "white",
             }}
