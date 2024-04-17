@@ -38,7 +38,12 @@ const useAlan = () => {
               }
             }
             break;
+          case "login": {
+            document.getElementById("loginBtn")?.click();
+            break;
+          }
           default:
+            console.log("invalid command");
         }
       },
     });

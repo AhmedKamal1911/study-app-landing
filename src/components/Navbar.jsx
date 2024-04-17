@@ -18,10 +18,6 @@ export const NAV_LINKS = [
     linkName: "contact us",
     path: "/contact",
   },
-  {
-    linkName: "login",
-    path: "https://histudy-dashboard.netlify.app/login",
-  },
 ];
 export const RELATIVE_LINKS = [
   {
@@ -140,6 +136,7 @@ export const NavList = ({ direction = "row", showLoginLink = false }) => {
         {relativeLinks}
         {showLoginLink && (
           <Button
+            id="loginBtn"
             component="a"
             sx={{
               textTransform: "capitalize",
@@ -309,6 +306,7 @@ const Navbar = () => {
                 <>
                   <NavList />
                   <Button
+                    id="loginBtn"
                     component="a"
                     sx={{
                       textTransform: "capitalize",

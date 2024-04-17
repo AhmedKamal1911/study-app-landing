@@ -55,9 +55,11 @@ const LandingSection = () => {
         bottom="-2px"
         left="0"
         right="0"
-        backgroundSize="cover"
-        backgroundPosition="center center"
-        backgroundRepeat="no-repeat"
+        sx={{
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
         zIndex="1"
       >
         <img
