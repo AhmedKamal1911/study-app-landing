@@ -7,7 +7,7 @@ import {
 import { Box, Stack, Typography } from "@mui/material";
 import useReviews from "../hooks/useReviews";
 import { useParams } from "react-router-dom";
-
+import profileImg from "../assets/images/person.png";
 const FeaturedReviewBox = () => {
   // FIXME: here ???? make the end point gets me the reviews of this slug and with every review has its own creator
   const { slug } = useParams();
@@ -37,7 +37,9 @@ const FeaturedReviewBox = () => {
                 <StudentReviewCard
                   reviewText={courseReview.reviewBody}
                   reviewValue={courseReview.rating}
-                  studentAvatar={courseReview.reviewCreator.avatar}
+                  studentAvatar={
+                    courseReview.reviewCreator.avatar ?? profileImg
+                  }
                   studentFullName={courseReview.reviewCreator.fullName}
                 />
               </Box>
