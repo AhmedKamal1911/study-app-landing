@@ -57,3 +57,9 @@ export { default as ReviewBox } from "./ReviewBox";
 export { default as ContactBox } from "./ContactBox";
 export { default as Footer } from "./Footer";
 // End Normal Components
+// Forms
+export { default as RegisterForm } from "./RegisterForm";
+export { default as PasswordField } from "./PasswordField";
+export { default as CustomSelectField } from "./CustomSelectField";
+export { default as CustomTextField } from "./CustomTextField";
+export { default as FieldError } from "./FieldError";

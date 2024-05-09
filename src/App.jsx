@@ -20,6 +20,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScreenLoader from "./components/ScreenLoader";
 import { HelmetProvider } from "react-helmet-async";
+import RegisterPage from "./pages/RegisterPage";
 
 const RootLayout = lazy(() => import("./layouts/RootLayout"));
 const router = createBrowserRouter(
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/courses/:slug" element={<CoursePage />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Route>

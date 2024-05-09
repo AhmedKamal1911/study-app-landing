@@ -135,20 +135,35 @@ export const NavList = ({ direction = "row", showLoginLink = false }) => {
         {navLinks}
         {relativeLinks}
         {showLoginLink && (
-          <Button
-            id="loginBtn"
-            component="a"
-            sx={{
-              textTransform: "capitalize",
-            }}
-            color="primary"
-            size="large"
-            variant="outlined"
-            href="https://histudy-dashboard.netlify.app/enroll"
-            target="_blank"
-          >
-            Login
-          </Button>
+          <Stack gap={1}>
+            <Button
+              id="loginBtn"
+              component="a"
+              sx={{
+                textTransform: "capitalize",
+              }}
+              color="primary"
+              size="large"
+              variant="outlined"
+              href="https://histudy-dashboard.netlify.app"
+              target="_blank"
+            >
+              Login
+            </Button>
+            <Button
+              id="loginBtn"
+              component="a"
+              sx={{
+                textTransform: "capitalize",
+              }}
+              color="primary"
+              size="large"
+              variant="outlined"
+              href="/register"
+            >
+              Register
+            </Button>
+          </Stack>
         )}
       </Stack>
     </div>
@@ -305,20 +320,35 @@ const Navbar = () => {
               {isLargeScreen && (
                 <>
                   <NavList />
-                  <Button
-                    id="loginBtn"
-                    component="a"
-                    sx={{
-                      textTransform: "capitalize",
-                    }}
-                    color="primary"
-                    size="large"
-                    variant="outlined"
-                    href="https://histudy-dashboard.netlify.app/enroll"
-                    target="_blank"
-                  >
-                    Login
-                  </Button>
+                  <Stack direction="row" gap={2}>
+                    <Button
+                      id="loginBtn"
+                      component="a"
+                      sx={{
+                        textTransform: "capitalize",
+                      }}
+                      color="primary"
+                      size="large"
+                      variant="outlined"
+                      href="https://histudy-dashboard.netlify.app"
+                      target="_blank"
+                    >
+                      Login
+                    </Button>
+                    <Button
+                      id="loginBtn"
+                      component="a"
+                      sx={{
+                        textTransform: "capitalize",
+                      }}
+                      color="primary"
+                      size="large"
+                      variant="outlined"
+                      href="/register"
+                    >
+                      Register
+                    </Button>
+                  </Stack>
                 </>
               )}
             </Stack>
