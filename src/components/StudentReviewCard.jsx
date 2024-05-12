@@ -18,7 +18,9 @@ const StudentReviewCard = ({
           alt="avatar"
           style={{
             width: "95px",
+            height: "95px",
             borderRadius: "50%",
+            objectFit: "cover",
           }}
         />
       </Box>

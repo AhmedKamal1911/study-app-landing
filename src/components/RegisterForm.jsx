@@ -79,6 +79,7 @@ const RegisterForm = ({ onRegister }) => {
     clearInputFileList();
     userSelectedImageURL && hideUserImage();
   }
+  console.log({ formik });
   return (
     <Box
       bgcolor="background.paper"
@@ -320,7 +321,6 @@ const RegisterForm = ({ onRegister }) => {
           Already have an account?{" "}
           <Link
             to="https://histudy-dashboard.netlify.app/login"
-            target="_blank"
             style={{
               textDecoration: "none",
               color: "rgb(105, 108, 255)",
