@@ -132,10 +132,10 @@ const ContactUs = () => {
           publicKey: "iUwcDkXUsqrfT70kx",
         })
         .then(
-          (_) => {
+          () => {
             openSnackbar("Message Sent Successfully");
           },
-          (_) => {
+          () => {
             openSnackbar("Failed to send message", "error");
           }
         )

@@ -20,12 +20,13 @@ import registerFormSchema, {
   fileValidationSchema,
 } from "../validations/registerFormSchema";
 import { getFieldError, validateFile } from "../utils";
-
+// React Component
 const RegisterForm = ({ onRegister }) => {
   const inputFileRef = useRef(null);
   const formRef = useRef(null);
   const [showInstructorDescription, setShowInstructorDesc] = useState(false);
   const [userSelectedImageURL, setUserSelectedImageURL] = useState("");
+  // Formik Inputs initialValues
   const formik = useFormik({
     initialValues: {
       file: null,
@@ -54,6 +55,7 @@ const RegisterForm = ({ onRegister }) => {
         formData.delete("instructorDescription");
       }
       try {
+        // Register Function
         await onRegister(formData, values.userType);
 
         URL.revokeObjectURL(userSelectedImageURL);
@@ -62,12 +64,15 @@ const RegisterForm = ({ onRegister }) => {
       }
     },
   });
+  // Helper Function
   function hideUserImage() {
     URL.revokeObjectURL(userSelectedImageURL);
     setUserSelectedImageURL("");
   }
+  // Helper Function
   function clearInputFileList() {
     inputFileRef.current.files = new DataTransfer().files;
+    // Helper Function
   }
   function handleFileChange(file) {
     formik.setFieldValue("file", file ?? null);
