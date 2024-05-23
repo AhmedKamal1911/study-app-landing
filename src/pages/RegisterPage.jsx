@@ -50,6 +50,7 @@ const RegisterPage = () => {
           maxWidth: "600px",
           width: "100%",
           zIndex: "2",
+          paddingBlock: "70px",
         }}
       >
         <RegisterForm onRegister={onRegister} />
