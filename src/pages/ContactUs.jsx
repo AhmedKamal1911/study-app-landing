@@ -7,7 +7,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { ContactBox, SectionHeader } from "../components";
+import { ContactBox, FieldError, SectionHeader } from "../components";
 import { East, Headphones, LocationOn, MailOutline } from "@mui/icons-material";
 import emailjs from "@emailjs/browser";
 import { styled } from "@mui/system";
@@ -228,11 +228,14 @@ const ContactUs = () => {
               label="Name"
               variant="standard"
             />
-            <span style={{ color: "red" }}>
-              {formik.touched.name && formik.errors.name
-                ? formik.errors.name
-                : null}
-            </span>
+            <FieldError
+              errorText={
+                formik.touched.name && formik.errors.name
+                  ? formik.errors.name
+                  : null
+              }
+            />
+
             <StyledTextField
               value={formik.values.email}
               onChange={formik.handleChange}
@@ -243,11 +246,13 @@ const ContactUs = () => {
               label="Email"
               variant="standard"
             />
-            <span style={{ color: "red" }}>
-              {formik.touched.email && formik.errors.email
-                ? formik.errors.email
-                : null}
-            </span>
+            <FieldError
+              errorText={
+                formik.touched.email && formik.errors.email
+                  ? formik.errors.email
+                  : null
+              }
+            />
 
             <StyledTextField
               value={formik.values.subject}
@@ -259,11 +264,13 @@ const ContactUs = () => {
               variant="standard"
               name="subject"
             />
-            <span style={{ color: "red" }}>
-              {formik.touched.subject && formik.errors.subject
-                ? formik.errors.subject
-                : null}
-            </span>
+            <FieldError
+              errorText={
+                formik.touched.subject && formik.errors.subject
+                  ? formik.errors.subject
+                  : null
+              }
+            />
 
             <StyledTextField
               value={formik.values.message}
@@ -276,11 +283,13 @@ const ContactUs = () => {
               variant="standard"
               name="message"
             />
-            <span style={{ color: "red" }}>
-              {formik.touched.message && formik.errors.message
-                ? formik.errors.message
-                : null}
-            </span>
+            <FieldError
+              errorText={
+                formik.touched.message && formik.errors.message
+                  ? formik.errors.message
+                  : null
+              }
+            />
 
             <Button
               type="submit"

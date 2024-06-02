@@ -146,7 +146,6 @@ const RegisterForm = ({ onRegister }) => {
             />
             <FieldError errorText={getFieldError(formik, "file")} />
           </div>
-
           <div>
             <CustomTextField
               name="username"
