@@ -1,7 +1,7 @@
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { NAV_LINKS, NavList, RELATIVE_LINKS } from "../components/Navbar";
+import { NAV_LINKS, RELATIVE_LINKS } from "../components/Navbar";
 import useSectionNavigation from "./useSectionNavigation";
 const useAlan = () => {
   const navigate = useNavigate();
@@ -40,6 +40,10 @@ const useAlan = () => {
             break;
           case "login": {
             document.getElementById("loginBtn")?.click();
+            break;
+          }
+          case "register": {
+            document.getElementById("registerBtn")?.click();
             break;
           }
           default:

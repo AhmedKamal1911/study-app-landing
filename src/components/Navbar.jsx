@@ -150,7 +150,7 @@ export const NavList = ({ direction = "row", showLoginLink = false }) => {
               Login
             </Button>
             <Button
-              id="loginBtn"
+              id="registerBtn"
               component="a"
               sx={{
                 textTransform: "capitalize",
@@ -334,7 +334,7 @@ const Navbar = () => {
                       Login
                     </Button>
                     <Button
-                      id="loginBtn"
+                      id="registerBtn"
                       component="a"
                       sx={{
                         textTransform: "capitalize",
