@@ -38,7 +38,7 @@ https://github.com/AhmedKamal1911/study-app-landing/blob/main/package.json
 
 
 
-Get your API key from Strapi
+Get your API key from the Backend Developer
 
 ## Prerequisites
 This project uses Yarn as a package manager
