@@ -88,6 +88,7 @@ yarn build
 ![image](https://github.com/user-attachments/assets/9b6eced3-35bb-41e5-a3c6-7854629ff706)
 
 `Alan AI`
+
 ![image](https://github.com/user-attachments/assets/7a340200-e507-4d15-8c12-a9aaa12ad26a)
 
 `courses Page`
