@@ -85,6 +85,11 @@ yarn build
 
 ![image](https://github.com/user-attachments/assets/7a340200-e507-4d15-8c12-a9aaa12ad26a)
 
+
+
+https://github.com/user-attachments/assets/556026b3-c57b-4ebb-a8c0-b6564840f331
+
+
 `courses Page`
 
 ![image](https://github.com/user-attachments/assets/c9830976-cde7-47a8-bc03-c4e7df815eb8)
