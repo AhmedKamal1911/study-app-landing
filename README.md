@@ -80,15 +80,18 @@ To deploy this project run
 yarn build
 ```
 `Course Page`
+
 ![course](https://github.com/user-attachments/assets/e11de8aa-1e84-431d-8c0b-6f95dbf61e79)
 
 ![image](https://github.com/user-attachments/assets/fd77bd1c-00d2-48ea-8fb2-03a09b125450)
 
 ![image](https://github.com/user-attachments/assets/9b6eced3-35bb-41e5-a3c6-7854629ff706)
 
+`Alan AI`
 ![image](https://github.com/user-attachments/assets/7a340200-e507-4d15-8c12-a9aaa12ad26a)
 
 `courses Page`
+
 ![image](https://github.com/user-attachments/assets/c9830976-cde7-47a8-bc03-c4e7df815eb8)
 
 
