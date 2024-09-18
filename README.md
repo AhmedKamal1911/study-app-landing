@@ -109,7 +109,7 @@ https://histudy-app.netlify.app/
 
 The Project API is built with Backend Developer and consumed by the client. You can check the Strapi API endpoints in the project for more details.
 
-https://educational-platform-nestjs-api.onrender.com/v1/courses/
+https://educational-platform-nestjs-api.onrender.com/v1
 
 #### What dependencies were used to develop the project?
 
