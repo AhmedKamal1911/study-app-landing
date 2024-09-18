@@ -34,12 +34,6 @@ https://github.com/AhmedKamal1911/study-app-landing/blob/main/package.json
 -Optimistic/Pessimistic updates for smoother user interactions.
 
 
-## Environment Variables
-
-
-
-Get your API key from the Backend Developer
-
 ## Prerequisites
 This project uses Yarn as a package manager
 ```bash
