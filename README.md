@@ -28,9 +28,13 @@ https://github.com/AhmedKamal1911/study-app-landing/blob/main/package.json
 ## Features
 
 -Course browsing with pagination.
+
 -Registration page for user sign-up.
+
 -Lazy loading for course images.
+
 -Search functionality for courses.
+
 -Optimistic/Pessimistic updates for smoother user interactions.
 
 
