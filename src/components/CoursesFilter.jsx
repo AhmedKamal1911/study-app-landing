@@ -66,7 +66,7 @@ const CoursesFilter = ({ coursesShowLimit = 6 }) => {
 
       <Loading isLoading={isLoading} error={error}>
         <Grid container spacing={{ xs: 2, lg: 5 }} justifyContent="center">
-          {coursesDataToShow?.map(({ id, thumbnails, title, slug }) => (
+          {coursesDataToShow?.map(({ id, thumbnails, title }) => (
             <Grid
               key={id}
               md={6}
@@ -82,7 +82,7 @@ const CoursesFilter = ({ coursesShowLimit = 6 }) => {
                 <CourseCard
                   image={thumbnails}
                   smallImg={thumbnails}
-                  slug={slug}
+                  slug={title}
                   id={id}
                   title={title}
                 />

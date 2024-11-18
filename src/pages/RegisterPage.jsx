@@ -9,17 +9,17 @@ import studyBg from "../assets/images/studybg.jpg";
 const RegisterPage = () => {
   const { openSnackbar } = useSnackbar();
 
-  const onRegister = async (registerData, endPoint = "users") => {
-    const userTypeSingular = endPoint.slice(0, endPoint.length - 1);
+  const onRegister = async (registerData, endPoint = "user") => {
+    const userTypeSingular = endPoint.slice(0, endPoint.length);
+    console.log([...registerData.entries()], "register data");
     try {
       await fetchFromAPI({
-        url: `/${endPoint}`,
+        url: `auth/${endPoint}/signup`,
         method: "POST",
-
         data: registerData,
       });
 
-      location.assign("https://histudy-dashboard.netlify.app/login");
+      location.assign("http://localhost:3001/login");
       openSnackbar(`${userTypeSingular}, created successfully.`);
     } catch (e) {
       openSnackbar(`Failed to create ${userTypeSingular}`, "error");

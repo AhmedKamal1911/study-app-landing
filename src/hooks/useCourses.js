@@ -5,6 +5,7 @@ const useCourses = (params) => {
     url: "/courses",
     params: params,
   });
+  // console.log(courses);
   return { courses, ...rest };
 };
 

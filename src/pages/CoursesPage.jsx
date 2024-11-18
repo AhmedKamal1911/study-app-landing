@@ -28,7 +28,9 @@ const CoursesPage = () => {
               autoHighlight
               noOptionsText="Course Not Found"
               onChange={(_, value) => {
-                navigate(`/courses/${value.slug}`);
+                const slug = value.title?.split(" ").join("-");
+
+                navigate(`/courses/${slug}`);
               }}
               onOpen={() => {
                 setOpenAutoComplete(true);
@@ -37,9 +39,10 @@ const CoursesPage = () => {
                 setOpenAutoComplete(false);
               }}
               getOptionLabel={(option) => option.title ?? option}
-              isOptionEqualToValue={(option, value) =>
-                option.title === value.title
-              }
+              isOptionEqualToValue={(option, value) => {
+                console.log(option, "option");
+                option.title === value.title;
+              }}
               loading={loading}
               options={courses || []}
               renderInput={(params) => (

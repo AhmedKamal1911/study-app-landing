@@ -35,9 +35,10 @@ const CourseInstructorBox = ({
           <img
             src={avatarImg}
             style={{
-              maxWidth: "250px",
-              width: "100%",
+              width: "200px",
+              height: "200px",
               borderRadius: "50%",
+              objectFit: "cover",
             }}
             alt="instructor"
           />

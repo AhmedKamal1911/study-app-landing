@@ -19,7 +19,8 @@ import { useCourseData } from "../contexts/CourseDataContext";
 import calculateReviewValue from "../utils/calculateReviewValue";
 const CourseDetailsSection = () => {
   const { course } = useCourseData();
-  const firstName = course?.courseCreator.fullName.split(" ")[0];
+  const firstName = course?.courseCreator.fullName?.split(" ")[0];
+  console.log(course);
   // const InstructorFirstName = course?.courseCreator.fullName.split(" ")?.[0];
 
   return (

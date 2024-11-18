@@ -22,7 +22,9 @@ const ErrorPage = () => {
           mt={2}
           fontSize={{ xs: "30px", md: "45px" }}
         >
-          {error.message}
+          {error?.response?.data?.message
+            ? error?.response?.data?.message
+            : error.message}
         </Typography>
       </Box>
     </Stack>

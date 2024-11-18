@@ -35,13 +35,14 @@ const RegisterForm = ({ onRegister }) => {
       email: "",
       password: "",
       confirmPassword: "",
-      userType: "users",
+      userType: "user",
       instructorDescription: "",
       termsAgree: false,
     },
     validationSchema: registerFormSchema,
     onSubmit: async (values) => {
       const formData = new FormData(formRef.current);
+
       const unnecessaryInputNames = [
         "userType",
         "termsAgree",
@@ -50,9 +51,10 @@ const RegisterForm = ({ onRegister }) => {
       const trimmedFullName = values.fullName.trim();
       formData.set("fullName", trimmedFullName);
       unnecessaryInputNames.forEach((key) => formData.delete(key));
-      if (values.userType === "users") formData.delete("instructorDescription");
+      if (values.userType === "user") formData.delete("instructorDescription");
       try {
         // Register Function
+        console.log(values);
         await onRegister(formData, values.userType);
         URL.revokeObjectURL(userSelectedImageURL);
       } finally {
@@ -60,6 +62,7 @@ const RegisterForm = ({ onRegister }) => {
       }
     },
   });
+
   // Helper Function
   function hideUserImage() {
     URL.revokeObjectURL(userSelectedImageURL);
@@ -107,7 +110,7 @@ const RegisterForm = ({ onRegister }) => {
           HiStudy
         </Typography>
       </Stack>
-      <Box color="black" mb={2}>
+      <Box color="black" mb={2} sx={{ textAlign: "center" }}>
         <Typography fontWeight="bold" fontSize={24} color="primary.main">
           Adventure starts here 🚀
         </Typography>
@@ -219,14 +222,14 @@ const RegisterForm = ({ onRegister }) => {
             label="User Type"
             onChange={(e) => {
               formik.handleChange(e);
-              setShowInstructorDesc(e.target.value === "instructors");
+              setShowInstructorDesc(e.target.value === "instructor");
             }}
             onBlur={formik.handleBlur}
             value={formik.values.userType}
             controlled
           >
-            <MenuItem value="users">Student</MenuItem>
-            <MenuItem value="instructors">Instructor</MenuItem>
+            <MenuItem value="user">Student</MenuItem>
+            <MenuItem value="instructor">Instructor</MenuItem>
           </CustomSelectField>
           <FieldError errorText={getFieldError(formik, "userType")} />
         </div>
@@ -234,6 +237,7 @@ const RegisterForm = ({ onRegister }) => {
         <div
           style={{
             display: showInstructorDescription ? "block" : "none",
+            marginTop: "30px",
           }}
         >
           <CustomTextField
@@ -295,7 +299,7 @@ const RegisterForm = ({ onRegister }) => {
         <Typography p={3} color="lightDark">
           Already have an account?{" "}
           <Link
-            to="https://histudy-dashboard.netlify.app/login"
+            to="http://localhost:3001/login"
             style={{
               textDecoration: "none",
               color: "rgb(105, 108, 255)",

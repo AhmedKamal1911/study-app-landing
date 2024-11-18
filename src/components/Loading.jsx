@@ -20,7 +20,9 @@ const Loading = ({
     return !errorElement ? (
       <Stack justifyContent="center" alignItems="center" minHeight="86.5vh">
         <Typography color="red" variant="h4">
-          {error.message}
+          {error?.response?.data?.message
+            ? error.response.data.message
+            : error.message}
         </Typography>
       </Stack>
     ) : (

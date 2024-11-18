@@ -4,6 +4,8 @@ import mobileImg1 from "../assets/images/mobilecard1.png";
 import { Link } from "react-router-dom";
 
 const CourseCard = ({ title, image, smallImg, slug }) => {
+  const courseSlug = slug?.split(" ").join("-");
+
   return (
     <Box
       className="course-card shadow-3"
@@ -96,7 +98,7 @@ const CourseCard = ({ title, image, smallImg, slug }) => {
           whiteSpace="nowrap"
           overflow="hidden"
           title={title}
-          to={`/courses/${slug}`}
+          to={`/courses/${courseSlug}`}
           component={Link}
           sx={{
             textOverflow: "ellipsis",
