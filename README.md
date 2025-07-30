@@ -105,6 +105,9 @@ https://github.com/user-attachments/assets/556026b3-c57b-4ebb-a8c0-b6564840f331
 
 https://histudy-app.netlify.app/
 
+`Dashboard Source Code:`
+
+https://github.com/AhmedKamal1911/study-app-dashboard
 #### Where to find the movies api used?
 
 The Project API is built with Backend Developer and consumed by the client. You can check the Strapi API endpoints in the project for more details.
